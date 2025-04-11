@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <h1 id="headings"></h1>
+  <script>
+
+
+// object
+
+// 1way
+
+let details={
+  
+  name:'fullstack',
+  fees:30000,
+  trainer:'kanishka',
+  student:'shankar'
+
+}
+
+console.log(details)
+console.log(details.student)
+
+
+// for in 
+
+for(let x in details){
+  console.log(`${x} .... ${details[x]}`)
+  console.log()
+}
+
+
+// 2way
+
+let info = new Object();
+info.name='shankar'
+info.course='fullstck'
+info.company='tcs'
+console.log(info.company)
+
+
+// 3way
+
+class Demo{
+
+
+  constructor(id,name,phone){
+    this.id=id
+    this.name=name
+    this.phone=phone
+  }
+
+
+}
+
+let dm=new Demo(123,'shankar',98765432)
+console.log(dm)
+
+// array
+// object
+
+let a=[12,13,14,15,16]
+
+let [a1,a2,a3,a4,a5]=a
+console.log(a1)
+
+
+// let details={
+  
+//   name:'fullstack',
+//   fees:30000,
+//   trainer:'kanishka',
+//   student:'shankar'
+
+// }
+
+
+let{name,fees,trainer,student}=details;
+console.log(trainer)
+
+
+// spread operator
+
+let a8=[...a,23,44]
+console.log(a8)
+
+// rest operator
+let data=function (a,b,...rest){
+
+  console.log(a)
+  console.log(b)
+  console.log(rest)
+}
+data(12,13,14,15)
+
+// DOM
+document.getElementById('headings').innerHTML=a
+
+// promise --->object
+
+let ticket=new Promise((resolve,reject)=>{
+
+  let ticket=false;
+
+  if(ticket){
+    resolve(4)
+  }
+  else{
+    reject()
+  }
+})
+ticket.then((seat)=>console.log(`ticket booked only ${seat} avaiable`))
+.catch(()=>console.log("ticket not avaiable housefull"))
+
+
+
+// setInterval
+
+// setInterval(callback,milesec)
+// setInterval(()=>{
+// console.log('hello')
+// },3000)
+
+// setTimeout
+// setTimeout(()=>{
+// console.log('hello')
+// },3000)
+
+// async function test(){
+//   await "hello"
+// }
+// let demo=test()
+// console.log(demo)
+// console.log(test())
+
+
+async function bookingTicket(){
+
+ try{
+  console.log("please wait..........")
+ result= await ticket
+  console.log(result)
+ }
+ catch(e){
+  console.log(e)
+ }
+}
+
+console.log('thank you')
+bookingTicket()
+
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <p id="root"></p>
+  
+
+  <script>
+
+    
+
+
+
+
+
+// functions
+
+// function funName(){
+//   statement -->set of action 
+// }
+// funName()
+
+// function without parameter and return type
+
+function add(){
+  console.log('addition')
+}
+add()
+
+// function with parameter
+function sub(a,b){
+console.log(a-b)
+}
+sub(12,3)
+
+
+// function with return type
+function multiple(a,b){
+
+  return a*b
+
+}
+
+let values=multiple(12,8)
+console.log(values)
+
+
+
+// callback
+
+function demo (){
+  console.log('test')
+}
+
+
+function higherorderfunction(callback){
+ return gets
+}
+// names(demo())
+
+
+// hoisting
+
+coding()
+
+function coding(){
+  console.log('development')
+}
+
+
+// filter
+// map
+// reduce
+
+let a=[12,13,14,15,16,17]
+
+let filterVal=a.filter((val)=>{
+ return val>15
+})
+console.log(filterVal)
+
+// map
+
+let mapVal=a.map((data)=>{
+
+  return data
+})
+console.log(mapVal)
+
+
+// reduce
+let addtion =a.reduce((a,b)=>{
+  return a+b
+})
+
+console.log(addtion)
+
+
+    let dt = new Date();
+    dt.setDate(12)
+    dt.setFullYear(1945)
+    console.log(dt)
+    let dates=dt.getDate()
+    console.log(dates)
+    let days=dt.getDay()
+    console.log(days)
+    let year=dt.getFullYear()
+    console.log(year)
+    let mon=dt.getMonth()
+    console.log(mon)
+
+    let month= ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    let day=["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+
+    document.getElementById('root').innerHTML=`${dates} / ${month[mon]} / ${day[days]} / ${year} `
+
+    class Demo{//class
+
+
+      add(){//method
+        console.log('addition')
+      }
+
+
+
+      }
+      let dm = new Demo();
+      dm.add()
+
+
+      class Demo1 extends Demo {//inheritance
+
+        sub(){
+          console.log('substraction')
+        }
+
+      }
+
+      let dm1 = new Demo1();
+      dm1.sub()
+      dm1.add()
+
+
+
+
+
+    
+
+
+  </script>
+  
+</body>
+</html>
